@@ -1,0 +1,13 @@
+.header {
+  background-color: #ffffff !important;
+  color: white;
+}
+
+.header a {
+  color: rgb(0, 0, 0) !important;
+  transition: color 0.3s ease;
+}
+
+.header a:hover {
+  color: #d4f1c5 !important; 
+}

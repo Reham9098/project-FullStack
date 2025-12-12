@@ -1,0 +1,125 @@
+.banner-section {
+    background-color: white;
+    position: relative;
+  }
+  
+  .purple-box {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    width: 90%;
+    height: 90%;
+    background-image: url("../Images/ser.jpg"); 
+    background-size: cover;   /* or contain depending on your design border-radius: 2rem 0 0 2rem; */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    z-index: 0;
+  }
+  
+  .sofa-image {
+    max-width: 100%;
+    height: auto;
+    position: relative; /* Needed to apply top/left */
+    top: 157px;           /* Move down */
+    left: -120px;         /* Move left */
+    z-index: 1;
+}
+
+
+
+
+
+
+/* ====== Section General ====== */
+.services-section {
+  background-color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+/* ====== Section Header (title + description) ====== */
+.section-header {
+  opacity: 0;
+  animation: slideUp 0.6s ease forwards;
+  animation-delay: 0.1s;
+  margin-bottom: 2.5rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ====== Services Boxes ====== */
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-box {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  width: 220px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: slideUp 0.6s ease forwards;
+}
+
+/* Sequential delays for animation */
+.service-box:nth-child(1) { animation-delay: 0.2s; }
+.service-box:nth-child(2) { animation-delay: 0.3s; }
+.service-box:nth-child(3) { animation-delay: 0.4s; }
+.service-box:nth-child(4) { animation-delay: 0.5s; }
+
+.service-box:hover {
+  background-color: #cceeff;
+}
+
+.service-icon {
+  font-size: 1.75rem;
+  color: #0891b2;
+  margin-bottom: 0.75rem;
+}
+
+.service-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #ffdd00;
+}
+
+.cyan-text {
+  color: #077793;
+}
+
+.yellow-text {
+  color: #e1c50f;
+}
+
+
+/* ====== Slide-Up Animation ====== */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

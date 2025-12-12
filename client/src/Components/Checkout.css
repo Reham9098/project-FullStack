@@ -1,0 +1,85 @@
+.checkout-form {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkout-form h2,
+.checkout-form h3 {
+  color: #03831f;
+  margin-bottom: 20px;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"],
+.checkout-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.checkout-form input:focus {
+  border-color:#03831f;
+  background-color: #fff;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-details {
+  margin-top: 20px;
+}
+
+.card-details-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.card-details-row input {
+  flex: 1;
+}
+
+button[type="submit"] {
+  margin-top: 30px;
+  padding: 12px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color:#03831f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #03831f;
+}

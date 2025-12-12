@@ -1,0 +1,68 @@
+/* Center all cards in the middle of the page */
+.orders-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Center horizontally */
+  justify-content: center;   /* Center vertically */
+  padding: 2rem;
+  gap: 2rem; /* المسافة بين الكاردات */
+  background-color: #f8f9fa;
+}
+
+/* Smaller card and centered */
+.order-card {
+  width: 70%;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem; /* مسافة إضافية بين الكاردات */
+}
+
+/* Title */
+.order-title {
+  color: #03831f;
+  margin-bottom: 1rem;
+}
+
+/* General text */
+.order-card p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.order-card a {
+  color: #03831f;
+  text-decoration: underline;
+}
+
+/* Table styling */
+.order-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+.order-table th {
+  font-weight: bold;
+}
+
+/* Footer info box */
+.order-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}

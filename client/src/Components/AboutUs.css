@@ -1,0 +1,24 @@
+
+.about-section {
+  background-color: #f1f1f1;
+  overflow: hidden;
+  position: relative;
+}
+
+.blue-rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background-color: #0089ae;
+  z-index: 1;
+  border-top-left-radius: 0;
+}
+
+.building-image {
+  z-index: 2;
+  position: relative;
+  max-height: 350px;
+  object-fit: contain;
+}

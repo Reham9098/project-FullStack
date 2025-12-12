@@ -1,0 +1,243 @@
+/* Full-screen modal background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal content container */
+.modal-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 500px; /* أعرض الفورم */
+  width: 100%;
+  overflow: visible;
+}
+
+/* Close button (X) */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+/* Login/Register form box */
+.login-form-box {
+  position: relative;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.login-logo {
+  width: 100px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+/* Form heading */
+.div-form h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #03831f; /* أخضر */
+}
+
+/* Input fields */
+/* Input fields - Email & Password نفس ستايل */
+.form-group input {
+  padding: 0.75rem 0.75rem; /* padding موحد */
+  border: 1.5px solid #44444457; /* نفس الحدود */
+  border-radius: 5px; /* زوايا بسيطة */
+  width: 100%;
+  box-sizing: border-box; /* تضمن تساوي الحجم */
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  height: 40px; /* ارتفاع ثابت لجميع الحقول */
+}
+
+/* Submit button */
+.button {
+  background-color: #28a745; /* أخضر */
+  color: white;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px; /* بسيطة */
+  border: none;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.button {
+  background-color: #03831f !important; 
+  color: white !important;
+}
+.button:hover {
+  background-color: #03831f !important;
+}
+
+.button:hover {
+  background-color: #218838; 
+}
+
+/* Validation error text */
+.error {
+  font-size: 0.85rem;
+  color: #c00;
+  margin-bottom: 0.5rem;
+}
+
+/* Server messages */
+.server-message {
+  text-align: center;
+  color: #444;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+/* Full-screen modal background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal content container */
+.modal-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.95); 
+  border-radius: 8px; 
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 600px; 
+  width: 90%; /* يستجيب للشاشات */
+  overflow: visible;
+}
+
+
+/* Close button (X) */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+/* Login/Register form box */
+.login-form-box {
+  position: relative;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.login-logo {
+  width: 100px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+/* Form heading */
+.div-form h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #03831f; /* أخضر */
+}
+
+/* Input fields */
+.form-group input {
+  padding: 0.3rem 0.4rem; /* أقل padding عمودي */
+  border: 1.5px solid #44444457;
+  border-radius: 5px; /* بسيطة */
+  width: 100%;
+  max-width: 500px; /* جعل الحقول أعرض قليلًا */
+  box-sizing: border-box;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+.form-group input {
+  padding: 0.4rem 0.5rem; /* أقل padding عمودي */
+  height: 36px; /* تقليل ارتفاع الحقل */
+  margin-bottom: 0.2rem; /* تقليل المسافة بين الحقول */
+  
+}
+
+/* Submit button */
+.button {
+  background-color: #28a745; /* أخضر */
+  color: white;
+  width: 100%;
+  max-width: 500px; /* متناسق مع التيكست بوكس */
+  padding: 0.55rem;
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+.button:hover {
+  background-color: #218838; /* أخضر داكن عند المرور */
+}
+
+/* Validation error text */
+.error {
+  font-size: 0.85rem;
+  color: #c00;
+  margin-bottom: 0.5rem;
+}
+
+/* Server messages */
+.server-message {
+  text-align: center;
+  color: #444;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
