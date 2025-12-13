@@ -13,13 +13,24 @@ const app = express();
 app.use(express.json());
 
 // ===== CORS configuration =====
-const corsOptions = {
-  origin: ["http://localhost:3003"], // السماح للـ React app
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"], // السماح بكل الـ methods
-  allowedHeaders: ["Content-Type", "Authorization"], // السماح بالـ headers المطلوبة
-  credentials: true, // إذا كنت تستخدم الكوكيز أو الـ auth
-};
-app.use(cors(corsOptions));
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:3003",
+  "https://project-fullstack-server.onrender.com"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  credentials: true
+}));
+
 // ================================
 
 // Database connection
