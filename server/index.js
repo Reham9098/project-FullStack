@@ -15,6 +15,7 @@ app.use(express.json());
 // ===== CORS configuration =====
 const allowedOrigins = [
   "http://localhost:3000",
+  "http://localhost:3001",
   "http://localhost:3003",
   "https://project-fullstack-server.onrender.com"
 ];
